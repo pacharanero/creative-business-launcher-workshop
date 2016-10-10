@@ -1,150 +1,320 @@
 <!doctype html>
-<html lang="en">
-
+<html>
 	<head>
 		<meta charset="utf-8">
-
-		<title>reveal.js template</title>
-
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title></title>
+
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
 
-		<!-- For syntax highlighting -->
+		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<!-- Printing and PDF exports -->
 		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
-				var link = document.createElement( 'link' );
-				link.rel = 'stylesheet';
-				link.type = 'text/css';
-				link.href = 'css/print/pdf.css';
-				document.getElementsByTagName( 'head' )[0].appendChild( link );
-			}
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
 	</head>
-
 	<body>
 		<div class="reveal">
-			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
+
+				<section id="title">
 					<h1>CREATIVE BUSINESS LAUNCHER WORKSHOP</h1>
 					<img src="img/!MAIN BANNER HackspaceBannerHiRes USE THIS.png" alt="banner" />
 				</section>
 
-				<section>
-					<h1>Starting up your business</h1>
-					What is my business going to do? | The concept of a ‘corporation’ | Should I be a sole trader or a Limited Company? (or something else?) | What does Limited by Guarantee / Shares mean?
+				<section id="about-marcus">
+						<h1>MARCUS</h1>
+						<h3 class="fragment fade-in">GP and Health IT Specialist</h3>
+						<h3 class="fragment fade-in">Ruby Coder</h3>
+						<h3 class="fragment fade-in">BDFL of Leigh Hackspace</h3>
+						<h4 class="fragment fade-in">woodwork + traditional ropework + leatherwork + electronics = SailpunkWorkshop</h4>
+						<h3 class="fragment fade-in"><a href="https://twitter.com/marcus_baw">@marcus_baw</a></h3>
+				</section>
 
-					move accountancy to before lunch
+				<section id="about-katie">
+						<h1>KATIE</h1>
+						<h3 class="fragment fade-in">Freelance Photographer</h3>
+						<h3 class="fragment fade-in">Hackspace Maven</h3>
+						<h3 class="fragment fade-in">Recent New Business Starter</h3>
+						<h3 class="fragment fade-in"><a href="https://twitter.com/katie_l_dixon">@katie_l_dixon</a></h3>
+				</section>
+
+				<section id="about-hackspace">
+						<h1>HACKSPACE</h1>
+						<h3 class="fragment fade-in">Non-profit shared makerspace</h3>
+						<h3 class="fragment fade-in">Funded by memberships, courses, commissions</h3>
+						<h3 class="fragment fade-in">100% reinvestment in our space and community</h3>
+						<h4 class="fragment fade-in">(ie: we're not grant funded)</h4>
+				</section>
+
+				<section id="about-workshop">
+						<h1>WORKSHOP</h1>
+						<h3 class="fragment fade-in">Simple ideas</h3>
+						<h3 class="fragment fade-in">Workshop style, hands-on, practical</h3>
+						<h3 class="fragment fade-in">Everyone needs different things</h3>
+						<h3 class="fragment fade-in"><strong>Peer-to-peer</strong> learning & teaching</h3>
+						<h3 class="fragment fade-in"> - don't be afraid to join in!</h3>
+
+						<h2 class="fragment fade-in">Be excellent to each other</h3>
+				</section>
+
+				<section id="starting-up">
+						<section>
+							  <h1>STARTING UP</h1>
+						</section>
+						<section>
+							  <h2>What is my business going to do?</h2>
+						</section>
+						<section>
+							  <h3>The concept of a ‘corporation’</h3>
+						</section>
+						<section>
+								<h3>Sole trader or Limited Company? (or something else?)</h3>
+						</section>
+						<section>
+								<h3>Limited by Guarantee or Shares</h3>
+						</section>
+						<section>
+								<h3>Other types of Company</h3>
+								<h3 class="fragment fade-in">Community Interest Company</h3>
+								<h3 class="fragment fade-in">Charity</h3>
+						</section>
+						<section>
+								<iframe src="https://www.gov.uk/topic/company-registration-filing/starting-company" width="100%" height="2000"></iframe>
+						</section>
+				</section>
+
+				<section id="efficient-company">
+						<section>
+							<h1>GET STUFF DONE</h1>
+						</section>
+						<section>
+							  <h2>Messaging & Information Management</h2>
+								<h3 class="fragment fade-in">{More important for multi-person companies}</h3>
+								<h3 class="fragment fade-in">Don't use email for everything!</h3>
+								<h3 class="fragment fade-in">Don't use phone for everything!</h3>
+								<h3 class="fragment fade-in">Don't use Slack for everything!</h3>
+								<h3 class="fragment fade-in">Don't use a Wiki for everything!</h3>
+						</section>
+						<section>
+							  <h2>Obtaining and Maintaining Focus</h2>
+								<h3 class="fragment fade-in">Space</h3>
+								<h3 class="fragment fade-in">Pomodoros</h3>
+								<h3 class="fragment fade-in">Exercise</h3>
+								<h3 class="fragment fade-in">Headphones</h3>
+								<h3 class="fragment fade-in">(Everyone is different, YMMV)</h3>
+						</section>
+						<section>
+								<h1>H0w N0t 2 Get H4ck2d</h1>
+								<h1 class="fragment fade-in"><a href="https://howsecureismypassword.net/" target="_blank"><br/>How Secure Is Your Password?</a></h1>
+						</section>
+						<section>
+								<h3 class="fragment fade-in">Internet Hygiene</h3>
+								<h3 class="fragment fade-in">Password Managers eg <a href="http://www.lastpass.com" target="_blank">LastPass</a></h3>
+								<h3 class="fragment fade-in">Internet Hygiene</h3>
+								<h3 class="fragment fade-in">Phishing Scams</h3>
+						</section>
+						<section>
+								<h2>Projects</h2>
+								<h3 class="fragment fade-in"><a href="https://trello.com/b/b17OcrJ8/leigh-hackspace-do-ocracy-board-for-issues-and-improvements">Trello</a></h3>
+								<h3 class="fragment fade-in"><a href="https://app.asana.com/0/11003417558956/list">Asana</a></h3>
+						</section>
+						<section>
+								<h2>Our Productivity Course</h2>
+								<iframe src="http://www.leighhack.org/personal-productivity-hackday/" width="100%" height="2000">Personal Productivity Course @ Leigh Hackspace</iframe>
+
+						</section>
 				</section>
 
 				<section>
-					<h1>Running an efficient company</h1>
-					Email, messaging, and avoiding information overload | How to Not Get Hacked | Running projects and events | How to get ‘in the zone’ and focus
+						<h1>TAX & ACCOUNTS</h1>
+						<img class="fragment fade-in" src="http://www.flowonlineaccounting.co.uk/wp-content/themes/flow/img/site/about_circle.png" width="100%" height="100%"/>
+				</section>
+
+				<section id="telling-people-about-it">
+						<section>
+								<h1>TELLING PEOPLE ABOUT IT</h1>
+						</section>
+						<section>
+								<h2>'who are we trying to talk to?'</h2>
+								<h2>'what are we trying to say?'</h2>
+						</section>
+
+						<section>
+								<h2><a href="https://www.linkedin.com/in/marcusbaw?trk=nav_responsive_tab_profile" target="_blank">LinkedIn</a></h2>
+								<h4 class="fragment fade-in">businessy (not in a good way)</h4>
+								<h4 class="fragment fade-in">unbelievably intrusive</h4>
+								<h4 class="fragment fade-in">expensive</h4>
+						</section>
+
+						<section>
+								<h2><a href="https://www.instagram.com/leighhackspace/" target="_blank">Instagram</a></h2>
+								<h4 class="fragment fade-in">good for visuals</h4>
+								<h4 class="fragment fade-in">unlimited characters and hastags</h4>
+								<h4 class="fragment fade-in">arty, less mainstream (in a good way)</h4>
+						</section>
+
+						<section>
+								<h2><a href="https://twitter.com/leigh_hackspace" target="_blank">Twitter</a></h2>
+								<h4 class="fragment fade-in">choosing a good handle (length--)</h4>
+								<h4 class="fragment fade-in">basic usage (what is a follow, what is a tweet)</h4>
+								<h4 class="fragment fade-in">strategic twitter: quoting posts & following</h4>
+						</section>
+
+						<section>
+								<h2><a href="https://www.facebook.com/LeighHackspace/" target="_blank">Facebook</a></h2>
+								<h4 class="fragment fade-in">the default social media platform (certainly locally)</h4>
+								<h4 class="fragment fade-in">paid advertising 'boosting' a post - often poor results</h4>
+								<h4 class="fragment fade-in">better to get others to share (strategies for this...)</h4>
+						</section>
+
+						<section>
+								<h3>'Traditional' marketing</h3>
+								<h4 class="fragment fade-in">Get yourself in the paper</h4>
+								<h4 class="fragment fade-in">Essential Guides &c</h4>
+								<h4 class="fragment fade-in">Paid advertising</h4>
+
+								<h3 class="fragment fade-in">Word of mouth</h3>
+								<h4 class="fragment fade-in">Works for us!</h4>
+						</section>
+
+						<section>
+								<a href="http://www.cluetrain.com/" target="_blank">The Cluetrain Manifesto</a>
+								<h5 class="fragment fade-in">
+										<p>There's a new conversation between and among your market and your workers. It's making them smarter and it's enabling them to discover their human voices.</p>
+										<p>Networks are enabling your best people to hyperlink themselves together, outside the org chart. They're incredibly productive and innovative. They're telling one another the truth, in very human voices.</p>
+										<p>You have two choices.</p>
+										<p>You can continue to lock yourself behind facile corporate words and happytalk brochures.</p>
+										<p>Or you can join the conversation.</p>
+								</h5>
+						</section>
+				</section>
+
+				<section id="how to run a workshop">
+						<section>
+								<h1>CREATIVE WORKSHOPS</h1>
+						</section>
+						<section>
+								<h3>Advertising a workshop</h3>
+								<h4 class="fragment fade-in"></h4>
+						</section>
+						<section>
+								<h3>The difficult issue of Pricing...</h3>
+								<h4 class="fragment fade-in">Accessibility</h4>
+								<h4 class="fragment fade-in">Perceived value</h4>
+								<h4 class="fragment fade-in">'At-cost'</h4>
+								<h4 class="fragment fade-in">Sustainable pricing</h4>
+								<h4 class="fragment fade-in">Day rate</h4>
+								<h4 class="fragment fade-in">Markup %age</h4>
+						</section>
+						<section>
+								<h3>Is 'in-person' the best way for you?</h3>
+								<h4 class="fragment fade-in">YouTube</h4>
+								<h4 class="fragment fade-in">Udemy</h4>
+								<h4 class="fragment fade-in">Podcasting</h4>
+								<h4 class="fragment fade-in">Many, many online platforms exist...</h4>
+						</section>
+						<section>
+								<h2>Publicising a Workshop</h2>
+								<h3 class="fragment fade-in">Specialist sites (craft dependent)</h3>
+								<h3 class="fragment fade-in">Meetup</h3>
+								<h3 class="fragment fade-in">Eventbrite</h3>
+						</section>
 				</section>
 
 				<section>
-					<h1>Social Media and Marketing</h1>
-					Targeting your audience | How to get the best use out of the major social media platforms | Twitter, Facebook, Instagram, LinkedIN and others | When to use digital marketing, | When to use ‘traditional’ forms of marketing | When to rely on word of mouth | The Cluetrain Manifesto
-				</section>
-
-				* twitter - sign up, choosing a good handle (length--), basic usage (what is a follow, what is a tweet), Quoting tweets in order to flag them to other twitter users, following
-
-				<section>
-					<h1>How to run a workshop</h1>
-					Running successful workshops | Running workshops at Leigh Hackspace | Advertising a workshop | The difficult issue of Pricing | Online tutorials and YouTube-ing
+						<h1>SELLING CRAFTS</h1>
+						<h3 class="fragment fade-in">Etsy</h3>
+						<h3 class="fragment fade-in">eBay</h3>
+						<h3 class="fragment fade-in">Craft Fairs</h3>
+						<h3 class="fragment fade-in">Workshops</h3>
 				</section>
 
 				<section>
-					<h1>Accountancy taxation and finances</h1>
-					Do I need an accountant? | What happens with tax and NI? | How should I do the books?
+						<section>
+							  <h2>Alternative forms of funding</h2>
+						</section>
+						<section>
+								<h2>crowdfunding</h2>
+						</section>
+						<section>
+								<h2>grants</h2>
+						</section>
+						<section>
+								<h2>donations and open source</h2>
+						</section>
+						<section>
+							  <h2>business loans</h2>
+						</section>
 				</section>
 
 				<section>
-					<h1>Certificates, Insurance and Legals</h1>
+						<section>
+								<h1>THE WEB</h1>
+						</section>
+						<section>
+								<h1>Setting up a website</h1>
+								<h4 class="fragment fade-in">A web presence is pretty important, unless you <strong>know</strong> your customers won't use it</h4>
+
+								<h4 class="fragment fade-in">simplest: use Facebook Pages</h4>
+								<h4 class="fragment fade-in">next up: website builders - eg Wix</h4>
+								<h4 class="fragment fade-in">Workshops</h4>
+
+
+						</section>
+						<section>
+								<h2>registering a domain name</h2>
+						</section>
+						<section>
+								<h1>email</h1>
+						</section>
+						<section>
+								<h1>Security</h1>
+						</section>
+						<section>
+								<h3>e-commerce, paypal, shopify, magento</h3>
+						</section>
+				</section>
+
+				<section>
+						<section>
+								<h1>Certificates, Insurance and Legals</h1>
+						</section>
+
+
+
 					Public Liability Insurance | Business Insurances | Indemnity Insurance | CRB and DBS checks |
 				</section>
 
-				<section>
-					<h1>Selling</h1>
-					Etsy | eBay | Craft Fairs | Workshops
-				</section>
-
-				<section>
-					banking, loans, paypal
-					alternative forms of funding for creative businesses
-					crowdfunding | grants | donations and open source
-				</section>
-
-				<section>
-
-					<section>
-						<h1>Web Presence</h1>
-					</section>
-
-					<section>
-						<h1>Setting up a website</h1>
-					</section>
-
-					<section>
-						registering a domain name
-					</section>
-
-					<section>
-						getting email addresses
-					</section>
-
-					<section>
-						Security
-					</section>
-
-					<section>
-						e-commerce, paypal, shopify, magento etc
-					</section>
-
-				</section>
 			</div>
 		</div>
 
-
 		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+		<script src="js/reveal.js"></script>
+
 		<script>
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
+			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: true,
+				history: true,
 				progress: true,
 				history: true,
 				center: true,
- 			    transitionSpeed: 'slow', // default/fast/slow
+				transitionSpeed: 'slow',
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
-
-				// Parallax scrolling
-				//parallaxBackgroundImage: '',
-				//parallaxBackgroundSize: '',
-
-				// Optional libraries used to extend on reveal.js
+				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-					//{ src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
 		</script>
